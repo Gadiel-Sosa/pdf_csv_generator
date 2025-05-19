@@ -6,7 +6,6 @@ import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart' as pw;
 
 Future<String> generatePdfFileUsingIsolate() async {
-  // ✅ Obtener el directorio en el hilo principal
   final directory = await getApplicationDocumentsDirectory();
   final outputPath = '${directory.path}/usuarios.pdf';
 
